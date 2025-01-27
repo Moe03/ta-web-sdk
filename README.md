@@ -1,4 +1,4 @@
-## Get started with TIXAE Agents Web Call SDK:
+## Get started:
 
 Make sure to update the package regularly to the latest version.
 
@@ -9,6 +9,25 @@ Or
 ```bash
 npm install @tixae-labs/web-sdk@latest
 ```
+
+---
+
+First of all please navigate to the [TIXAE Dashboard](https://dashboard.tixae.com) and create an agent, then you can use the agent id and region to start a voice call.
+
+We need to know 2 parameters to start a voice call from the URL of the agent you have navigated to:
+
+1. `agentId` - The agent id is a unique identifier for the agent you want to call.
+2. `region` - The region is the region of the agent you want to call.
+
+![agent-id](./assets/thing.png)
+
+For example this URL:
+
+```
+https://www.tixaeagents.ai/app/eu/agents/enit5lczmqbz1s7d/overview?showDebugger=true&thin=true
+```
+
+The `agentId` is `enit5lczmqbz1s7d` and the `region` is `eu`.
 
 ---
 
@@ -29,8 +48,8 @@ const page = () => {
     console.log(`starting voice call..`);
 
     await voice.init({
-      agentId: "LPTp73I6VFsI0jFVFAPr",
-      region: "eu",
+      agentId: "LPTp73I6VFsI0jFVFAPr", // MUST BE A VALID AGENT ID
+      region: "eu", // MUST BE A VALID REGION
     });
 
     voice.on("call-start", () => {
@@ -103,6 +122,12 @@ await voice.init({
   },
 });
 ```
+
+Notes:
+- This packages uses WebRTC to make the voice call, any browser that doesn't support that might not be compatible with this package.
+- If you have a bug report please open an issue on the [GitHub repository](https://github.com/Moe03/ta-web-sdk/issues).
+  
+---
 
 ```
 MIT License
