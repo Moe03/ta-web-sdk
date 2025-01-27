@@ -3,11 +3,11 @@
 Make sure to update the package regularly to the latest version.
 
 ```bash
-pnpm install ta-web-call@latest
+pnpm install @tixae-labs/web-sdk@latest
 ```
-
+Or
 ```bash
-npm install ta-web-call@latest
+npm install @tixae-labs/web-sdk@latest
 ```
 
 ---
@@ -18,7 +18,7 @@ Example usage with NextJS 13+ (App Router + TypeScript)
 "use client";
 import React from "react";
 import { Button } from "@nextui-org/react";
-import { WebCall } from "ta-web-call";
+import { WebCall } from "@tixae-labs/web-sdk";
 
 const page = () => {
   const [voiceState, setVoiceState] = React.useState<WebCall | null>(null);
