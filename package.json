@@ -1,6 +1,6 @@
 {
   "name": "@tixae-labs/web-sdk",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "dist/src/public_packages/web-call/src/index.js",
   "types": "dist/src/public_packages/web-call/src/index.d.ts",
   "scripts": {
@@ -8,6 +8,14 @@
     "prepare": "bun run src/scripts/post-build.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moe03/ta-web-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Moe03/ta-web-sdk/issues"
+  },
+  "homepage": "https://github.com/Moe03/ta-web-sdk#readme",
   "keywords": ["tixae", "web-sdk", "web-call", "voice-call", "voice-ai", "voice-assistant"],
   "author": "Moe Ayman - TIXAE LLC",
   "license": "MIT",
