@@ -12,7 +12,7 @@ npm install @tixae-labs/web-sdk@latest
 
 ---
 
-First of all please navigate to the [TIXAE Dashboard](https://dashboard.tixae.com) and create an agent, then you can use the agent id and region to start a voice call.
+First of all please navigate to the [TIXAE Dashboard](https://tixaeagents.ai/login) and create an agent, then you can use the agent id and region to start a voice call.
 
 We need to know 2 parameters to start a voice call from the URL of the agent you have navigated to:
 
