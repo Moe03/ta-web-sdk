@@ -36,7 +36,6 @@ Example usage with NextJS 13+ (App Router + TypeScript)
 ```tsx
 "use client";
 import React from "react";
-import { Button } from "@nextui-org/react";
 import { WebCall } from "@tixae-labs/web-sdk";
 
 const page = () => {
@@ -81,20 +80,20 @@ const page = () => {
 
   return (
     <div className="min-h-screen flex justify-center items-center">
-      <Button
-        onPress={() => {
+      <button
+        onClick={() => {
           voiceState?.startCall();
         }}
       >
         Start
-      </Button>
-      <Button
-        onPress={() => {
+      </button>
+      <button
+        onClick={() => {
           voiceState?.endCall();
         }}
       >
         Stop
-      </Button>
+      </button>
     </div>
   );
 };
