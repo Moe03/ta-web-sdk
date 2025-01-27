@@ -48,8 +48,8 @@ const page = () => {
     console.log(`starting voice call..`);
 
     await voice.init({
-      agentId: "LPTp73I6VFsI0jFVFAPr", // MUST BE A VALID AGENT ID
-      region: "eu", // MUST BE A VALID REGION
+      agentId: "", // MUST BE A VALID AGENT ID from the URL of the agent you have navigated to
+      region: "", // MUST BE A VALID REGION 'eu' or 'na'
     });
 
     voice.on("call-start", () => {
