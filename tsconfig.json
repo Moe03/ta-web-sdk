@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "CommonJS",
+        "baseUrl": "./",
+        "composite": true,
+        "strict": true,
+        "jsx": "react",
+        "noEmit": false,
+        "allowJs": true,
+        "outDir": "dist",
+        "rootDir": "../../../",
+        "skipLibCheck": true,
+        "preserveSymlinks": false,
+        "sourceMap": false,
+        "esModuleInterop": true,
+        "declaration": true,
+        "isolatedModules": true
+    },
+    "include": [
+        "src/**/*.ts",
+        "../../../src/app/Types/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "packages/*",
+        "vg-docker",
+        "call-service/*",
+        "bun-server/*",
+        "../../../src/*.tsx"
+    ]
+}
